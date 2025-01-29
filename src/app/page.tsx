@@ -1,7 +1,6 @@
-import menuPage from "@/app/menuPage/menuPage";
 import Link from "next/link";
 
-export default function page() {
+export default function Page() {
   return (
     <>
       <h1 className="text-6xl text-red-700 font-bold pt-5">
@@ -9,7 +8,7 @@ export default function page() {
       </h1>
 
       <div>
-        <Link href="/menuPage/menuPage">
+        <Link href="/menuPage">
           <button className="bg-red-700 text-white px-4 py-2 rounded">
             Botón de prueba
           </button>
