@@ -52,7 +52,7 @@ const drinkItems: MenuItemProps[] = [
 export function Menu(){
     return(
         <div className='max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-xl'>
-            <h1 className='text-3xl font-bold text-center mb-9'>Nuestro menu</h1>
+            <h1 className='text-3xl font-bold text-center mb-9'>NUESTRO MENÚ</h1>
 
             <MenuSection title='Burguers' items={foodBurguerItems}/>
             <MenuSection title='Papas' items={foodChipsItems}/>
