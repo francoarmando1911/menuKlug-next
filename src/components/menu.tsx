@@ -15,6 +15,13 @@ const foodBurguerItems: MenuItemProps[] = [
     { name: "Vegeta Blue", price: "$8100", description: "Doble blend vegano (consultar), roquefort, rucula, cebolla caramelizada" },
 ]
 
+const foodMilanesaItems: MenuItemProps[] = [
+    { name: "Milanesas Napolitanas", price: "$", description: "Milanesa de carne/pollo, salsa de tomate, jamon, queso y cherris. Con fritas o ensalada" },
+    { name: "Milanesa con ensalada", price: "$", description: "Milanesa de carne/pollo con ensalada de lechuga, tomate y cebolla" },
+    { name: "Milanesa con cheddar", price: "$", description: "Milanesa de carne/pollo con salsa cheddar, panceta y verdeo" },
+    { name: "Milanesa a los 4 quesos", price: "$", description: "Milanesa de carne/pollo, queso holanda, sardo, muzzarella, roquefort y verdeo" },
+]
+
 const foodChipsItems: MenuItemProps[] = [
     { name: "Papas tradicionales", price: "$4800", description: "" },
     { name: "Papas provenzal", price: "$5300", description: "Provenzal casero" },
@@ -43,10 +50,10 @@ const kidsMenuItems: MenuItemProps[] = [
 ]
 
 const drinkItems: MenuItemProps[] = [
-    { name: "Cerveza", price: "$8500", description: "Descripcion bebida" },
-    { name: "Tragos", price: "$8500", description: "Descripcion bebida" },
-    { name: "Refresco", price: "$8500", description: "Descripcion bebida" },
-    { name: "Agua", price: "$8500", description: "Descripcion bebida" }
+    { name: "Cerveza", price: "$", description: "Descripcion bebida" },
+    { name: "Tragos", price: "$", description: "Descripcion bebida" },
+    { name: "Refresco", price: "$", description: "Descripcion bebida" },
+    { name: "Agua", price: "$", description: "Descripcion bebida" }
 ]
 
 
@@ -57,11 +64,12 @@ export function Menu(){
         <div className='max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg'>
             <h1 className='text-4xl font-bold text-center mb-9'>NUESTRO MENÚ</h1>
 
-            <MenuSection title='Burguers' items={foodBurguerItems}/>
-            <MenuSection title='Papas' items={foodChipsItems}/>
-            <MenuSection title='Pizzas' items={foodPizzaItems} />
-            <MenuSection title='Menu infantil' items={kidsMenuItems} />
-            <MenuSection title='Bebidas' items={drinkItems}/>
+            <MenuSection title='Burguers 🍔' items={foodBurguerItems}/>
+            <MenuSection title='Milanesas 😋' items={foodMilanesaItems} />
+            <MenuSection title='Papas 🍟' items={foodChipsItems}/>
+            <MenuSection title='Pizzas 🍕' items={foodPizzaItems} />
+            <MenuSection title='Menu infantil ' items={kidsMenuItems} />
+            <MenuSection title='Bebidas 🍻🥤' items={drinkItems}/>
         </div>
     )
 }
