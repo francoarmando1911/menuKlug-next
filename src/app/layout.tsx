@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Menu Klug Next js",
   icons: {
     icon: '/logo1.png', 
-    apple: '/logo1.png', 
+    apple: '/logoKlug1.png', 
   },
 };
 
